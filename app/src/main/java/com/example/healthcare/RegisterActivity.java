@@ -59,8 +59,9 @@ public class RegisterActivity extends AppCompatActivity {
                          else
                              Toast.makeText(getApplicationContext(),"Password must contains 8 letters and digit and character and special symbols",Toast.LENGTH_SHORT).show();
                      }
-                         else
-                     Toast.makeText(getApplicationContext(), "password didn't match with confirm password", Toast.LENGTH_SHORT).show();
+                         else {
+                         Toast.makeText(getApplicationContext(), "password didn't match with confirm password", Toast.LENGTH_SHORT).show();
+                     }
                  }
 
             }
