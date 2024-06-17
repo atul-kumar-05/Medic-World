@@ -82,13 +82,16 @@ public class RegisterActivity extends AppCompatActivity {
               for(int i=0;i<passwordhere.length();i++)
               {
                   if(Character.isDigit(passwordhere.charAt(i)))
-                  f2=1;
+                  {
+                      f2=1;
+                  }
               }
               for(int i=0;i<passwordhere.length();i++)
               {
                   char c=passwordhere.charAt(i);
-                  if(c>=36 && c<=46 || c==64)
-                  f3=1;
+                  if(c>=36 && c<=46 || c==64) {
+                      f3 = 1;
+                  }
               }
           }
           if(f1==1 && f2==1 && f3==1)
